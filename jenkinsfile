@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo 'welcome to jenkins'
+                echo 'its done'
             }
         }
         stage('build'){
