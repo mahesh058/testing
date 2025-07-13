@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: ${{inputs.target-env}}
         env:
-            my-env-value: ${{vars.MY_ENV_VALUE || 'no_value'}}
+            my_env_value: ${{vars.MY_ENV_VALUE || 'no_value'}}
         steps:
             - name: echo
-              run: echo "env variable: ${{ env.my-env-value }}"
+              run: echo "env variable:\ ${{ env.my_env_value }}"
