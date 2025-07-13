@@ -15,4 +15,4 @@ jobs:
             my-env-value: ${{vars.MY_ENV_VALUE || 'no_value'}}
         steps:
             - name: echo
-              run: echo 'env variable: ${{ env.my-env-value }}'
+              run: echo "env variable: ${{ env.my-env-value }}"
